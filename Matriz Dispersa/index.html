@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Matriz Dispersa</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f1f1f1;
+      margin: 20px;
+    }
+
+    h1 {
+      text-align: center;
+      color: #333;
+    }
+
+    h2 {
+      color: #555;
+    }
+
+    form {
+      margin-bottom: 10px;
+    }
+
+    label {
+      font-weight: bold;
+      margin-right: 5px;
+    }
+
+    input[type="text"] {
+      padding: 5px;
+    }
+
+    button {
+      padding: 5px 10px;
+      background-color: #4CAF50;
+      border: none;
+      color: white;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #45a049;
+    }
+
+    table {
+      border-collapse: collapse;
+      width: max-content;
+      background-color: white;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    th, td {
+      border: 1px solid #ddd;
+      padding: 8px;
+      text-align: center;
+    }
+
+    th {
+      background-color: #4CAF50;
+      color: white;
+    }
+
+    td.filled {
+      background-color: yellow;
+    }
+  </style>
+</head>
+<body>
+  <h1>Matriz Dispersa</h1>
+  <h2>Marco de León - Clase Matriz Dispersa</h2>
+  <form>
+    <label for="x">Coordenada X:</label>
+    <input type="text" id="x" />
+    <label for="y">Coordenada Y:</label>
+    <input type="text" id="y" />
+    <button type="button" onclick="addElement()">Agregar</button>
+  </form>
+  <table id="matrixTable">
+  </table>
+
+  <script src="sparsematrix.js"></script>
+</body>
+</html>

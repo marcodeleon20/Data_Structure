@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Blockchain</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      margin: 0;
+      padding: 20px;
+    }
+
+    h1 {
+      text-align: center;
+      color: #333;
+    }
+
+    table {
+      margin-top: 20px;
+      border-collapse: collapse;
+      width: 100%;
+      background-color: #fff;
+      border: 1px solid #ccc;
+    }
+
+    table th,
+    table td {
+      border: 1px solid #ccc;
+      padding: 10px;
+      text-align: left;
+    }
+
+    table th {
+      background-color: #f2f2f2;
+    }
+
+    .block-controls {
+      margin-top: 20px;
+      display: flex;
+      align-items: center;
+    }
+
+    .block-controls label {
+      margin-right: 10px;
+      color: #333;
+    }
+
+    .block-controls input[type="number"] {
+      width: 80px;
+      padding: 5px;
+      font-size: 14px;
+    }
+
+    .block-controls button {
+      background-color: #333;
+      color: #fff;
+      border: none;
+      padding: 8px 12px;
+      font-size: 14px;
+      cursor: pointer;
+    }
+
+    .block-controls button:hover {
+      background-color: #555;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>Blockchain</h1>
+
+  <table id="blockchainTable">
+    <tr>
+      <th>Block</th>
+      <th>Previous Hash</th>
+      <th>Nonce</th>
+      <th>Timestamp</th>
+      <th>Hash</th>
+    </tr>
+  </table>
+
+  <div class="block-controls">
+    <button onclick="addBlock()">Add Block</button>
+    <label for="intervalInput">Block Generation Interval (seconds):</label>
+    <input type="number" id="intervalInput" min="1" value="60">
+    <button onclick="changeBlockGenerationInterval()">Set Interval</button>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.9-1/crypto-js.min.js"></script>
+  <script src="blockchain.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Árbol Binario</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+  <h2>Árbol Binario</h2>
+
+  <label for="valueInput">Ingrese un número:</label>
+  <input type="number" id="valueInput">
+  <button onclick="addNode()">Agregar Nodo</button>
+
+  <h3>Recorridos:</h3>
+  <table id="treeTable">
+    <tr>
+      <th>Inorden</th>
+      <th>Preorden</th>
+      <th>Postorden</th>
+    </tr>
+    <tr>
+      <td id="inorden"></td>
+      <td id="preorden"></td>
+      <td id="postorden"></td>
+    </tr>
+  </table>
+
+  <script src="binaryTree.js"></script>
+</body>
+</html>
