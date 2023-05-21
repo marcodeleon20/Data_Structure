@@ -12,9 +12,15 @@ This repository contains implementations of various common data structures in pr
 
 - Sparse Matrix: Implementation of a sparse matrix that efficiently stores and accesses two-dimensional data with a large number of zero elements.
 
+- Binary Tree: Implementation of a binary tree, a hierarchical data structure composed of nodes with at most two children. It provides efficient searching, insertion, and deletion operations.
+
 - Blockchain: Implementation of a blockchain that uses cryptography to ensure data integrity and non-repudiation. It is particularly useful in applications that require an immutable and transparent record of transactions.
 
 - Hash Table: Implementation of a hash table that provides efficient lookup of elements using a hash function.
+
+## Upcoming Features
+
+We are currently working on integrating a graph visualization tool, Graphviz, to visualize the data structures in an interactive and intuitive manner. Stay tuned for the upcoming updates!
 
 ## Contributions
 
