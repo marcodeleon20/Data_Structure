@@ -1,24 +1,24 @@
 # Data_Structure
 
-Este repositorio contiene implementaciones de diversas estructuras de datos comunes en programación. Cada estructura de datos está diseñada para proporcionar una funcionalidad eficiente y optimizada, y se presenta con ejemplos de código claro y explicaciones detalladas.
+This repository contains implementations of various common data structures in programming. Each data structure is designed to provide efficient and optimized functionality, and is presented with clear code examples and detailed explanations.
 
-## Estructuras de datos incluidas:
+## Included Data Structures:
 
-- Lista Enlazada: Implementación de una lista enlazada que permite la inserción, eliminación y búsqueda de elementos de forma eficiente.
+- Linked List: Implementation of a linked list that allows efficient insertion, deletion, and searching of elements.
 
-- Cola: Implementación de una cola que sigue el principio de "primero en entrar, primero en salir" (FIFO). Es útil en situaciones donde se requiere procesar elementos en el mismo orden en que llegaron.
+- Queue: Implementation of a queue that follows the "first in, first out" (FIFO) principle. It is useful in situations where processing elements in the same order they arrived is required.
 
-- Pila: Implementación de una pila que sigue el principio de "último en entrar, primero en salir" (LIFO). Es ideal para realizar seguimiento de estados o realizar operaciones reversibles.
+- Stack: Implementation of a stack that follows the "last in, first out" (LIFO) principle. It is ideal for tracking states or performing reversible operations.
 
-- Matriz Ortogonal: Implementación de una matriz ortogonal que permite almacenar y acceder eficientemente a datos bidimensionales.
+- Sparse Matrix: Implementation of a sparse matrix that efficiently stores and accesses two-dimensional data with a large number of zero elements.
 
-- BlockChain: Implementación de una cadena de bloques que utiliza criptografía para asegurar la integridad y la no repudiación de los datos. Es especialmente útil en aplicaciones que requieren un registro inmutable y transparente de transacciones.
+- Blockchain: Implementation of a blockchain that uses cryptography to ensure data integrity and non-repudiation. It is particularly useful in applications that require an immutable and transparent record of transactions.
 
-- Tabla Hash: Implementación de una tabla hash que proporciona una búsqueda eficiente de elementos mediante una función de dispersión.
+- Hash Table: Implementation of a hash table that provides efficient lookup of elements using a hash function.
 
-## Contribuciones
+## Contributions
 
-¡Las contribuciones a este repositorio son bienvenidas! Si deseas agregar nuevas implementaciones, mejorar las existentes o corregir errores, siéntete libre de hacerlo a través de pull requests.
+Contributions to this repository are welcome! If you wish to add new implementations, improve existing ones, or fix any issues, feel free to do so through pull requests.
 
-Esperamos que este repositorio te sea útil para comprender y utilizar estas estructuras de datos esenciales en tu desarrollo de software. ¡Explora el código, experimenta y diviértete!
+We hope this repository proves useful in understanding and utilizing these essential data structures in your software development. Explore the code, experiment, and have fun!
 
