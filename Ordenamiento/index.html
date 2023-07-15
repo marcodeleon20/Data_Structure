@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Algoritmos de Ordenamiento</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+  <h2>Algoritmos de Ordenamiento</h2>
+
+  <label for="dataInput">Ingrese los datos (separados por comas):</label>
+  <input type="text" id="dataInput">
+  <button onclick="processData()">Procesar Datos</button>
+
+  <table id="dataTable">
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Dato</th>
+      </tr>
+    </thead>
+    <tbody id="dataBody"></tbody>
+  </table>
+
+  <button onclick="sortAscending()">Ordenar Ascendente (QuickSort)</button>
+  <button onclick="sortDescending()">Ordenar Descendente (MergeSort)</button>
+
+  <script src="quicksort.js"></script>
+  <script src="mergesort.js"></script>
+  <script>
+    let data = [];
+
+    function processData() {
+      const dataInput = document.getElementById("dataInput");
+      const inputData = dataInput.value.trim();
+      data = inputData.split(",").map((item, index) => ({ id: index + 1, value: item.trim() }));
+
+      displayData();
+      dataInput.value = "";
+    }
+
+    function displayData() {
+      const dataBody = document.getElementById("dataBody");
+      dataBody.innerHTML = "";
+
+      data.forEach((item) => {
+        const row = document.createElement("tr");
+        row.innerHTML = `
+          <td>${item.id}</td>
+          <td>${item.value}</td>
+        `;
+        dataBody.appendChild(row);
+      });
+    }
+
+    function sortAscending() {
+      quickSort(data, 0, data.length - 1);
+      displayData();
+    }
+
+    function sortDescending() {
+      mergeSort(data, 0, data.length - 1);
+      data.reverse();
+      displayData();
+    }
+  </script>
+</body>
+</html>

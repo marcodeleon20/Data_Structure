@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Árbol AVL</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h2>Árbol AVL</h2>
+
+    <form id="avlForm">
+      <label for="avlValue" class="label">Ingrese un número:</label>
+      <input type="number" id="avlValue" class="input" required>
+      <button type="submit" class="button">Agregar Nodo</button>
+    </form>
+
+    <h3>Recorridos:</h3>
+    <table class="treeTable">
+      <tr>
+        <th>Inorden</th>
+        <th>Preorden</th>
+        <th>Postorden</th>
+      </tr>
+      <tr>
+        <td id="inorden"></td>
+        <td id="preorden"></td>
+        <td id="postorden"></td>
+      </tr>
+    </table>
+  </div>
+
+  <script src="avlTree.js"></script>
+</body>
+</html>
